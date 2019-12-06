@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- blockの中身をindex.htmlにextend -->
+全{{ total }}件<br />
+{% for r in results %}
+    [名前] {{ r["name"] }}<br />
+    [別名] {{ r["alias"] }}<br />
+    [活動場所] {{ r["area"] }}<br />
+    [タグ] {{ r["tag"] }}<br />
+    [レーティング] {{ r["rating"] }}
+    <hr>
+{% endfor %}
+{% endblock%}

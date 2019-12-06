@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>nlp_69</title>
+    </head>
+    <body>
+        アーティスト情報検索
+        <form action="/get" method="get">
+            キーワード: 
+            <input type="text" name="key">
+            <button type="submit">検索</button>
+        </form>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
